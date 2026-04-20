@@ -6,7 +6,7 @@
     <title>Trabalho home</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="inicio">
     <header id="menu">
         <nav class="menu-navegacao">
             <a href="#home">Inicio</a>
@@ -14,11 +14,17 @@
             <a href="#escolaridade">Escolaridade</a>
             <a href="#cursextras">Cursos extras</a>
             <a href="#exp">Experiências</a>
+            <a href="#FooterContato">Contato</a>
         </nav>
     </header>
-    <div id="home">
+    <!--Botão da música-->
+        <audio id="meuAudio" src="musicas/04 - Te Esperando - De Bar em Bar 9.mp3" loop></audio>
+        <button onclick="alternarSom()" id="btnSom" class="botao-musica">
+            <span id="iconeSom">🔇</span> <!-- Ícone inicial (Mudo) -->
+            </button>
+    <section id="home">
         <h1>CURRICULUM VITAE</h1>
-        <img id="retrato" src="imagens/Retrato.jpg" alt="">
+        <img id="retrato" src="imagens/retrato 3x4.jpg" alt="">
         <marquee behavior="" direction="right">Davi Matos</marquee>
         <hr>
         <h3 id="dados">Dados pessoais</h2>
@@ -27,23 +33,38 @@
             <li>Celular: 75 999901566</li>
             <li>Email: davimatis577@gmail.com</li>
         </ul>
+    </section>
         <hr>
-        <h3 id="escolaridade">ESCOLARIDADE</h3>
-        <ul>
-            <li>Formado em Análise e desenvolvimento de sistemas no SENAI</li>
-            <li>Barachelando em Sistemas da informação na Faculdade Santíssimo Sacramento</li>
-            <li>Ensino médio completo</li>
-        </ul>
-        <h3 id="cursextras">Cursos extras</h3>
-        <ul>
-            <li>Curso de informática na líder cursos</li>
-            <li>Curso de excel avançado na líder cursos</li>
-        </ul>
-        <h3> EXPERIÊNCIAS PROFISSIONAIS</h3>
-        <ul id="exp">
-            <li>Auxiliar admnistrativo - SEMORP</li>
-        </ul>
-    </div>
-    
+        <section id="SecaoEscolaridade">
+            <h3 id="escolaridade">ESCOLARIDADE</h3>
+            <ul>
+                <li>Formado em Análise e desenvolvimento de sistemas no SENAI. <a href="https://tecnico.senaibahia.com.br/alagoinhas/" target="_blank">Clique aqui para acessar o site.</a></li>
+                <li>Barachelando em Sistemas da informação na Faculdade Santíssimo Sacramento. <a href="https://www.fsssacramento.br/" target="_blank">Clique aqui para acessar o site.</a></li>
+                
+                <li>Ensino médio completo.</li>
+            </ul>
+        </section>
+       <section id="cursextras">
+           <h3 >Cursos extras</h3>
+           <ul>
+               <li>Curso de informática na líder cursos</li>
+               <li>Curso de excel avançado na líder cursos</li>
+           </ul>
+       </section>
+    <footer id="FooterContato">
+        <h3>CONTATO</h3>
+        <section >
+            <a href="https://www.linkedin.com/feed/" target="_blank"><img src="imagens/Logo linkedin.png" alt="" class="RedesSociais"></a>
+
+            <a href="https://wa.me/75999901566" target="_blank"><img src="imagens/logo whatsapp.webp" alt="" class="RedesSociais"></a>
+
+            <a href="https://github.com/sotaMivaD" target="_blank"><img src="imagens/github logo.png" alt="" class="RedesSociais"
+                id="Github"></a>
+
+            <a href="https://www.instagram.com/matosdavi_/"><img src="imagens/Instagram_icon.png.webp" class="RedesSociais" alt=""></a>
+            
+        </section>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

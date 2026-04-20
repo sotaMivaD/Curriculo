@@ -11,24 +11,69 @@
 html{
     scroll-behavior: smooth;
 }
+/*Seção inicio*/
+h1{
+    text-align: center;
+}
 header{
-position: fixed;
-  top: 0;
-  right: 10px;
-  width: 100%;   
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;   
+}
+.botao-musica {
+  position: fixed; /* Fica fixo na tela */
+  bottom: 20px;    /* Distância do fundo */
+  right: 20px;     /* Distância da direita */
+  width: 45px;     /* Largura menor */
+  height: 45px;    /* Altura igual para ser um círculo */
+  border-radius: 50%; /* Faz o botão ficar redondo */
+  border: none;
+  background-color:white; /* Cor de fundo escura */
+  cursor: pointer;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s, background-color 0.3s;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra suave */
+}
 
+/* Efeito ao passar o mouse */
+.botao-musica:hover {
+  background-color: #555;
+  transform: scale(1.1); /* Aumenta levemente */
 }
 .menu-navegacao{
-    display: flex;
-    justify-content: end;
-    gap: 20px;
-    margin-top: 15px;
-    padding-right: 10px;
+ display: flex;
+  justify-content: center; /* Centralizar os itens dá um ar mais moderno que o space-between total */
+  gap: 30px;               /* Espaço uniforme entre os itens */
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.05); /* Fundo quase invisível */
+  backdrop-filter: blur(5px);           /* Efeito de desfoque moderno */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: fixed;         /* Mantém o menu fixo ao rolar a página */
+  top: 0;
+  width: 100%;
 }
-
+.menu-navegacao a{
+text-decoration: none;
+  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.8s ease;
+}
+.menu-navegacao a:hover{
+  color: #00d4ff; /* Uma cor de destaque (ex: azul neon) */
+  text-shadow: 0 0 8px #00d4ff;
+  transform: scale(1.14);
+}
 #retrato{
-    width: 450px;
-    aspect-ratio: 3/2;
+    width: 350px;
+    aspect-ratio: 3/4;
     object-fit: cover;
     display: block;
     margin: 0 auto;
@@ -39,24 +84,37 @@ a{
     color: inherit;
     text-decoration: none;
 }
-#bahia{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+/*Seção escolaridade*/
+#SecaoEscolaridade ul li a{
+    text-decoration: underline
 }
 li{
     list-style-type: decimal;
     font-size: 25px;
     margin-bottom: 10px;
 }
-h1{
-    text-align: center;
-}
+
 marquee{
     font-size: 30px;
     text-shadow: 2px 2px 8px rgba(0, 0, 0,  0.7);
 }
+/*Seção Contato*/
 h3{
     font-size: 30px;
        text-shadow: 2px 2px 8px rgba(0, 0, 0,  0.7);
+}
+.RedesSociais{
+    width: 50px;
+    height: auto;
+}
+#Github{
+    width: 80px;
+}
+footer section{
+    display: flex;
+    gap: 15px;
+:hover{
+    transform: scale(1.2);
+     transition: all 0.5s ease;
+}
 }

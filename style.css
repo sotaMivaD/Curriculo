@@ -135,23 +135,36 @@ li {
 }
 
 /* --- REDES SOCIAIS / FOOTER --- */
-footer ul {
+.contato{
     display: flex;
     justify-content: start;
-    gap: 20px;
-    list-style: none;
-    padding: 0;
+    gap: 25px;
+    margin-top: 20px;
 }
 
-.RedesSociais {
+.item-contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item-contato span{
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.RedesSociais{
     width: 50px;
     height: auto;
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
 }
 
-.RedesSociais:hover {
+.RedesSociais:hover{
     transform: scale(1.2);
 }
-footer h3{
-    font-size: 25px;
+
+.frase-impacto{
+    margin-top: 25px;
+    font-size: 17px;
+    color: #dcdcdc;
 }
